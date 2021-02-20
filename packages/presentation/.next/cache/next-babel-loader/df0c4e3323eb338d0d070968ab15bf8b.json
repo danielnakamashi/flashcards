@@ -1,1 +1,0 @@
-{"ast":null,"code":"","map":{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":["import { UserData } from '../protocols'\n\ntype UserObserverInput = (user: UserData | null) => void\n\nexport type { UserObserverInput }\n"]},"metadata":{},"sourceType":"module"}

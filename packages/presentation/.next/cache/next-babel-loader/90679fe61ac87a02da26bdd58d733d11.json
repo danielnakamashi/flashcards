@@ -1,1 +1,0 @@
-{"ast":null,"code":"","map":{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":["import { CardData } from '../protocols'\n\ninterface ShuffleCardsUseCase {\n  (cards: CardData[]): Promise<CardData[]>\n}\n\nexport type { ShuffleCardsUseCase }\n"]},"metadata":{},"sourceType":"module"}

@@ -1,1 +1,0 @@
-{"ast":null,"code":"","map":{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":["import { Topic } from '@flashcards/core'\nimport { Observable } from '../protocols'\n\ninterface GetTopicsObserverUseCase {\n  getTopicsObserver(token: string): Observable<Topic[]>\n}\n\nexport type { GetTopicsObserverUseCase }\n"]},"metadata":{},"sourceType":"module"}

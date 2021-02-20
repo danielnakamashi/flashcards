@@ -1,1 +1,0 @@
-{"ast":null,"code":"","map":{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":["import { UserObserverInput } from './UserObserverInput'\n\ninterface UserObserverUseCase {\n  (callback: UserObserverInput): void\n}\n\nexport type { UserObserverUseCase }\n"]},"metadata":{},"sourceType":"module"}

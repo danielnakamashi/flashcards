@@ -1,1 +1,0 @@
-{"ast":null,"code":"","map":{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":["import { TopicData } from '../protocols'\n\ninterface GetTopicsService {\n  getTopics: (token: string) => Promise<TopicData[]>\n}\n\nexport type { GetTopicsService }\n"]},"metadata":{},"sourceType":"module"}

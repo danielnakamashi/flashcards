@@ -1,1 +1,0 @@
-{"ast":null,"code":"","map":{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":["interface ICard {\n  id: string\n  front: string\n  back: string\n}\n\nexport type { ICard }\n"]},"metadata":{},"sourceType":"script"}

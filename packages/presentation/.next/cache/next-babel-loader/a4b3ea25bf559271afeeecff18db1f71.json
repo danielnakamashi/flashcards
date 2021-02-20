@@ -1,1 +1,0 @@
-{"ast":null,"code":"","map":{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":["import { Topic } from '@flashcards/core'\n\ninterface GetTopicsUseCase {\n  (token: string): Promise<Topic[]>\n}\n\nexport type { GetTopicsUseCase }\n"]},"metadata":{},"sourceType":"module"}
