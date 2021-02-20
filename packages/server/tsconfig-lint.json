@@ -1,0 +1,7 @@
+{
+  "extends": "../../tsconfig-lint.json",
+  "include": ["src/**/*.ts", "typings/index.d.ts"],
+  "compilerOptions": {
+    "baseUrl": "."
+  }
+}

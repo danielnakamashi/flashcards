@@ -1,0 +1,1 @@
+{"ast":null,"code":"","map":{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":["import { User } from '@flashcards/core'\n\ninterface GetCurrentUserUseCase {\n  (): Promise<User | null>\n}\n\nexport type { GetCurrentUserUseCase }\n"]},"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { Home as default } from './Home';","map":{"version":3,"sources":["/Users/daniel.nakamashi/Documents/projects/clean-flashcards/packages/presentation/pages/home/index.tsx"],"names":["Home","default"],"mappings":"AAAA,SAASA,IAAI,IAAIC,OAAjB,QAAgC,QAAhC","sourcesContent":["export { Home as default } from './Home'\n"]},"metadata":{},"sourceType":"module"}

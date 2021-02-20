@@ -1,0 +1,17 @@
+{
+  "name": "@flashcards/usecase",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "author": "Daniel Nakamashi",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "lint:ts": "tsc --project tsconfig-lint.json"
+  },
+  "dependencies": {
+    "@flashcards/core": "*"
+  },
+  "devDependencies": {
+    "@tsconfig/node12": "^1.0.7"
+  }
+}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"","map":{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":["interface RemoveTopicUseCase {\n  (token: string, topicId: string): Promise<boolean>\n}\n\nexport type { RemoveTopicUseCase }\n"]},"metadata":{},"sourceType":"script"}

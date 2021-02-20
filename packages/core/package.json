@@ -1,0 +1,11 @@
+{
+  "name": "@flashcards/core",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "author": "Daniel Nakamashi",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "lint:ts": "tsc --project tsconfig-lint.json"
+  }
+}

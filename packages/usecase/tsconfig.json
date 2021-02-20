@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/node12/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": false,
+    "declaration": true,
+    "declarationMap": true,
+    "noEmit": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "composite": true
+  }
+}

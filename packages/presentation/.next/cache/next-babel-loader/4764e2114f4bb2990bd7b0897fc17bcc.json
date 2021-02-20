@@ -1,0 +1,1 @@
+{"ast":null,"code":"","map":{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":["import { UserData } from '../protocols'\n\ninterface GetCurrentUserService {\n  getCurrentUser(): Promise<UserData | null>\n}\n\nexport type { GetCurrentUserService }\n"]},"metadata":{},"sourceType":"module"}

@@ -1,0 +1,15 @@
+{
+  "extends": "@tsconfig/node12/tsconfig.json",
+  "include": ["src/**/*.ts", "typings/index.d.ts"],
+  "compilerOptions": {
+    "lib": ["ES2019", "ES2020.BigInt", "ES2020.String", "ES2020.Symbol.WellKnown"],
+    "allowJs": false,
+    "declaration": true,
+    "declarationMap": true,
+    "noEmit": false,
+    "outDir": "dist",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "baseUrl": "."
+  }
+}

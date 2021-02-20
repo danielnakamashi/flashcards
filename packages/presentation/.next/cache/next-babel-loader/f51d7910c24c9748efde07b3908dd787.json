@@ -1,0 +1,1 @@
+{"ast":null,"code":"export * from './Topic';","map":{"version":3,"sources":["/Users/daniel.nakamashi/Documents/projects/clean-flashcards/packages/presentation/pages/topic/[topicId]/index.ts"],"names":[],"mappings":"AAAA,cAAc,SAAd","sourcesContent":["export * from './Topic'\n"]},"metadata":{},"sourceType":"module"}

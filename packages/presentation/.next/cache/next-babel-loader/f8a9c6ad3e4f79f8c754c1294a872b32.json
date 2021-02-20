@@ -1,0 +1,1 @@
+{"ast":null,"code":"","map":{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":["interface RemoveTopicService {\n  removeTopic: (token: string, topicId: string) => Promise<boolean>\n}\n\nexport type { RemoveTopicService }\n"]},"metadata":{},"sourceType":"script"}

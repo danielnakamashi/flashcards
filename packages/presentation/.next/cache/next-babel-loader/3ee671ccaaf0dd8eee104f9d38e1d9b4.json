@@ -1,0 +1,1 @@
+{"ast":null,"code":"","map":{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":["import { User } from '@flashcards/core'\nimport { LoginProvidersData } from '../protocols'\n\ntype LoginWithProviderUseCase = (\n  provider: LoginProvidersData,\n) => Promise<User | null>\n\nexport type { LoginWithProviderUseCase }\n"]},"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"","map":{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":["export interface Observable<T> {\n  subscribe(callback: (data?: T) => void): () => void\n}\n"]},"metadata":{},"sourceType":"script"}

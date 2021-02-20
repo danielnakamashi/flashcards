@@ -1,0 +1,1 @@
+{"ast":null,"code":"","map":{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":["import { Topic } from '@flashcards/core'\n\ninterface AddTopicUseCaseParam {\n  name: string\n}\ninterface AddTopicUseCase {\n  addTopic(token: string, data: AddTopicUseCaseParam): Promise<Topic | null>\n}\n\nexport type { AddTopicUseCase }\n"]},"metadata":{},"sourceType":"module"}

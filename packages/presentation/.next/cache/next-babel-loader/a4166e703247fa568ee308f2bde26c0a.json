@@ -1,0 +1,1 @@
+{"ast":null,"code":"import * as dependencies from '@/main';\n\nfunction useUseCases() {\n  return dependencies;\n}\n\nexport { useUseCases };","map":null,"metadata":{},"sourceType":"module"}

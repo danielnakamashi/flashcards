@@ -1,0 +1,1 @@
+{"ast":null,"code":"","map":{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":["import { TopicData, Observable } from '../protocols'\n\ninterface GetTopicsObserverService {\n  getTopicsObserver: (token: string) => Observable<TopicData[]>\n}\n\nexport type { GetTopicsObserverService }\n"]},"metadata":{},"sourceType":"module"}

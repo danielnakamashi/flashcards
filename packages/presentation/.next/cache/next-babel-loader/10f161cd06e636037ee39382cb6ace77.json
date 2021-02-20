@@ -1,0 +1,1 @@
+{"ast":null,"code":"","map":{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":["import { ICard } from './ICard'\n\ninterface ITopic {\n  id: string\n  name: string\n  cards: ICard[]\n}\n\nexport type { ITopic }\n"]},"metadata":{},"sourceType":"module"}
