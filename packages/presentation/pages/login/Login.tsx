@@ -2,11 +2,10 @@ import * as React from 'react'
 import { useRouter } from 'next/router'
 import { Pages, Routes } from 'models'
 import { LoginProvidersData } from '@flashcards/usecase'
-import { useUseCases } from 'hooks/useUseCases'
+import { loginWithProvider } from '@/main'
 
 function Login() {
   const router = useRouter()
-  const { loginWithProvider } = useUseCases()
 
   return (
     <main>
