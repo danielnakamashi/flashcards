@@ -4,15 +4,13 @@ import { UserData, LoginProvidersData } from '@flashcards/usecase'
 import { AuthService } from '../AuthService'
 
 class FirebaseService implements AuthService {
-  private readonly firebase: firebase.app.App
-
-  constructor(options: unknown) {
+  constructor(options: Record<string, unknown>) {
     if (firebase.apps.length === 0) {
       firebase.initializeApp(options)
     }
   }
 
-  getUserToken(): Promise<string> {
+  getUserToken(): Promise<string | null> {
     const firebaseUser = firebase.auth().currentUser
 
     if (!firebaseUser) {
@@ -22,7 +20,7 @@ class FirebaseService implements AuthService {
     return firebaseUser.getIdToken(true)
   }
 
-  async getCurrentUser(): Promise<UserData> {
+  async getCurrentUser(): Promise<UserData | null> {
     const firebaseUser = firebase.auth().currentUser
 
     if (!firebaseUser) {
@@ -38,7 +36,7 @@ class FirebaseService implements AuthService {
     }
   }
 
-  userObserver(callback: (user: UserData) => void): void {
+  userObserver(callback: (user: UserData | null) => void): void {
     firebase.auth().onAuthStateChanged(async firebaseUser => {
       if (!firebaseUser) {
         return callback(null)
@@ -63,7 +61,7 @@ class FirebaseService implements AuthService {
     }
   }
 
-  async loginWithProvider(provider: LoginProvidersData): Promise<UserData> {
+  async loginWithProvider(provider: LoginProvidersData): Promise<UserData | null> {
     const firebaseProvider = this.getFirebaseProvider(provider)
     const { user } = await firebase.auth().signInWithPopup(firebaseProvider)
     const token = await user?.getIdToken(true)

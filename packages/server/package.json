@@ -1,7 +1,7 @@
 {
   "name": "@flashcards/server",
   "version": "0.1.0",
-  "main": "dist/index.js",
+  "main": "dist/lib.js",
   "author": "Daniel Nakamashi",
   "license": "MIT",
   "engines": {

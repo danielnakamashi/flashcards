@@ -13,7 +13,7 @@ const withRedirectToLogin = (Component: React.ElementType): React.ElementType =>
 
     if (!user) {
       router.push(Routes.login())
-      return null
+      return <div>Redirecting to login...</div>
     }
 
     return <Component {...props} />

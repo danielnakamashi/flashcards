@@ -14,7 +14,7 @@ import {
 } from '@flashcards/usecase'
 import firebaseConfig from './firebaseConfig'
 
-const graphqlService = new GraphqlService('http://localhost:4000/graphql')
+const graphqlService = new GraphqlService('/graphql')
 const firebaseService = new FirebaseService(firebaseConfig)
 
 const addCard = createAddCard(graphqlService)

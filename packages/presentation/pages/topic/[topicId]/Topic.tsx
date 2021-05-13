@@ -10,7 +10,7 @@ import { addCard } from '@/main'
 import { Flashcard } from '@/components/Flashcard'
 import { NewCardForm } from '@/components/NewCardForm'
 import { useTopic } from '@/hooks/useTopic'
-import { useStyles } from './Topic.style'
+import { useStyles } from '@/styles/pages/topic/[topicId]/Topic.style'
 
 const Topic = () => {
   const router = useRouter()

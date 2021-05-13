@@ -7,7 +7,7 @@ import { Header } from '@/components/Header'
 import { NewTopicForm } from '@/components/NewTopicForm'
 import { TopicsList } from '@/components/TopicsList'
 import { getTopicsObserver, addTopic, removeTopic } from '@/main'
-import { useStyles } from './Topics.styles'
+import { useStyles } from '@/styles/pages/topics/Topics.styles'
 import { withAuth } from '@/hocs/withAuth'
 import { withRedirectToLogin } from '@/hocs/withRedirectToLogin'
 
@@ -80,4 +80,4 @@ Topics.displayName = Pages.Home
 
 const TopicsDecorated = withAuth(withRedirectToLogin(Topics))
 
-export { TopicsDecorated as Topics }
+export { TopicsDecorated as default }

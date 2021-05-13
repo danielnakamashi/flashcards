@@ -9,16 +9,15 @@ function createGetTopicsObserver(service: GetTopicsObserverService): GetTopicsOb
     return new Observer<Topic[]>(next => {
       const observer = service.getTopicsObserver(token)
       observer.subscribe(topicsData => {
-        console.log(topicsData)
         next(
-          topicsData.map(
+          topicsData?.map(
             topicData =>
               new Topic({
                 id: topicData.id,
                 name: topicData.name,
                 cards: topicData.cards.map(card => new Card(card)),
               }),
-          ),
+          ) ?? [],
         )
       })
     })

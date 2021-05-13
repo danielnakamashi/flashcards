@@ -11,7 +11,7 @@ import { shuffleCards } from '@/main'
 import { Header } from '@/components/Header'
 import { StudyPile } from '@/components/StudyPile'
 import { CardData } from '@flashcards/usecase'
-import { useStyles } from './Study.style'
+import { useStyles } from '@/styles/pages/topic/[topicId]/study/Study.style'
 
 const Study = () => {
   const styles = useStyles()

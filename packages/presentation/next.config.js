@@ -6,4 +6,13 @@ const withTM = require('next-transpile-modules')([
 
 module.exports = withTM({
   reactStrictMode: true,
+  distDir: '../../dist',
+  async rewrites() {
+    return [
+      {
+        source: '/graphql',
+        destination: 'http://localhost:4000/graphql',
+      },
+    ]
+  },
 })

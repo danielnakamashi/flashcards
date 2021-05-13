@@ -33,6 +33,7 @@
   "scripts": {
     "test": "jest",
     "dev": "concurrently --names server,next \"yarn workspace @flashcards/server dev\" \"yarn workspace @flashcards/presentation dev\"",
+    "build": "yarn --cwd packages/presentation workspace @flashcards/presentation build",
     "lint": "yarn lint:es && yarn lint:ts",
     "lint:es": "eslint . --ext .ts,.tsx",
     "lint:ts": "lerna run lint:ts"

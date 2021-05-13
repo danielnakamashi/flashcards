@@ -1,6 +1,6 @@
 {
   "extends": "@tsconfig/node12/tsconfig.json",
-  "include": ["src/**/*.ts", "typings/index.d.ts"],
+  "include": ["typings/index.d.ts", "src/index.ts", "src/lib.ts"],
   "compilerOptions": {
     "lib": ["ES2019", "ES2020.BigInt", "ES2020.String", "ES2020.Symbol.WellKnown"],
     "allowJs": false,

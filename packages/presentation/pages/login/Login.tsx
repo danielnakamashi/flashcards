@@ -28,4 +28,4 @@ function Login() {
 
 Login.displayName = Pages.Login
 
-export { Login }
+export { Login as default }

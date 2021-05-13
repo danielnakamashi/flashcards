@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 8080",
     "build": "next build",
     "start": "next start",
     "lint:ts": "tsc"
   },
   "dependencies": {
     "@flashcards/core": "*",
+    "@flashcards/service": "*",
     "@flashcards/usecase": "*",
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",

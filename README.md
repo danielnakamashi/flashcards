@@ -17,7 +17,9 @@ NEXT_PUBLIC_FIREBASE_APP_ID=################
 NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=################
 ```
 
-You will also need a Firebase's service account. In order to get it, go to you Firebase project settings / service accounts / generate new private key. Put the file inside `packages/server/src/main` named as `service-account.json`.
+Create a Firebase's service account going to your Firebase project settings / service accounts / generate new private key. Put the file inside `packages/server/src/main` named as `service-account.json`.
+
+Create a new firestore database.
 
 ## Start web project
 

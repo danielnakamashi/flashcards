@@ -188,6 +188,10 @@ class GraphqlService implements RepositoryService {
       ],
     })
 
+    if (data === null || data === undefined) {
+      throw new Error('Error on mutation addCard')
+    }
+
     return new CardData({ id: data.id, front: data.question, back: data.answer })
   }
 }
