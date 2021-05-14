@@ -14,11 +14,12 @@
     "lint:ts": "tsc --project tsconfig-lint.json"
   },
   "devDependencies": {
+    "@tsconfig/node12": "^1.0.7",
     "@types/express": "^4.17.9",
     "ts-node": "^9.1.1"
   },
   "dependencies": {
-    "@flashcards/core": "0.1.0",
+    "@flashcards/core": "*",
     "@typescript-eslint/eslint-plugin": "^4.10.0",
     "@typescript-eslint/parser": "^4.10.0",
     "apollo-server-express": "^2.19.0",

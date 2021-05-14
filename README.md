@@ -6,6 +6,8 @@ This is composed by server side which creates a graphql server and client side.
 
 ## Preparing to run
 
+### Firebase
+
 Create a firebase app and fill a .env.local file with these values inside `packages/presentation` with this format.
 
 ```ini
@@ -20,6 +22,10 @@ NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=################
 Create a Firebase's service account going to your Firebase project settings / service accounts / generate new private key. Put the file inside `packages/server/src/main` named as `service-account.json`.
 
 Create a new firestore database.
+
+### Docker
+
+Install docker
 
 ## Start web project
 

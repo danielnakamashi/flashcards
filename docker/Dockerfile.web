@@ -1,0 +1,6 @@
+FROM node:12-alpine
+WORKDIR /usr/src/app
+COPY .. .
+RUN yarn --frozen-lockfile
+EXPOSE 8080
+CMD ["yarn", "workspace", "@flashcards/presentation", "dev"]

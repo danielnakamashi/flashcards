@@ -1,0 +1,7 @@
+FROM node:12-alpine
+WORKDIR /usr/src/app
+ENV PORT=4000
+COPY .. .
+RUN yarn --frozen-lockfile
+EXPOSE 4000
+CMD ["yarn", "workspace", "@flashcards/server", "dev"]

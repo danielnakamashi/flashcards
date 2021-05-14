@@ -11,7 +11,7 @@ module.exports = withTM({
     return [
       {
         source: '/graphql',
-        destination: 'http://localhost:4000/graphql',
+        destination: 'http://api:4000/graphql',
       },
     ]
   },
