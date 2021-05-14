@@ -1,6 +1,6 @@
 import { FirebaseService } from '../service/firebase/service'
 import * as useCases from '../usecase'
-import serviceAccount from './service-account.json'
+import serviceAccount from './service-account'
 
 const service = new FirebaseService(
   serviceAccount.client_email,

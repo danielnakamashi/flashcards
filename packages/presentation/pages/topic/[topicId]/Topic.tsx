@@ -20,8 +20,6 @@ const Topic = () => {
 
   const topic = useTopic(topicId)
 
-  console.log(token)
-
   if (!topic) {
     return <div>Loading...</div>
   }

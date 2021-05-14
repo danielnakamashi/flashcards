@@ -8,7 +8,7 @@ This is composed by server side which creates a graphql server and client side.
 
 ### Firebase
 
-Create a firebase app and fill a .env.local file with these values inside `packages/presentation` with this format.
+Create a Firebase app and a Firebase service account (going to your Firebase project settings / service accounts / generate new private key) and fill the .env.local file with these values with this format.
 
 ```ini
 NEXT_PUBLIC_FIREBASE_API_KEY=################
@@ -16,10 +16,15 @@ NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=################
 NEXT_PUBLIC_FIREBASE_PROJECT_ID=################
 NEXT_PUBLIC_FIREBASE_SENDER_ID=################
 NEXT_PUBLIC_FIREBASE_APP_ID=################
-NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=################
+FIREBASE_ADMIN_PRIVATE_KEY_ID==################
+FIREBASE_ADMIN_PRIVATE_KEY==################
+FIREBASE_ADMIN_CLIENT_EMAIL==################
+FIREBASE_ADMIN_CLIENT_ID==################
+FIREBASE_ADMIN_AUTH_URI==################
+FIREBASE_ADMIN_TOKEN_URI==################
+FIREBASE_ADMIN_AUTH_PROVIDER_X509_CERT_URL==################
+FIREBASE_ADMIN_CLIENT_X509_CERT_URL==################
 ```
-
-Create a Firebase's service account going to your Firebase project settings / service accounts / generate new private key. Put the file inside `packages/server/src/main` named as `service-account.json`.
 
 Create a new firestore database.
 
