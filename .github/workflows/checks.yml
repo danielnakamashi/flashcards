@@ -20,7 +20,7 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:
-      - name: Download files from setup
+      - uses: actions/download-artifact@v2
         with:
           path: .
       - run: ls
@@ -29,7 +29,7 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:
-      - name: Download files from setup
+      - uses: actions/download-artifact@v2
         with:
           path: .
       - run: ls
