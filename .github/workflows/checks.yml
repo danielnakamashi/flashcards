@@ -14,14 +14,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: cd flashcards
-      - run: |
-        ls ${{ github.workspace }}
+        run: |
+          ls ${{ github.workspace }}
       - run: yarn test:all
   build:
     needs: setup
     runs-on: ubuntu-latest
     steps:
       - run: cd flashcards
-      - run: |
-        ls ${{ github.workspace }}
+        run: |
+          ls ${{ github.workspace }}
       - run: yarn build
