@@ -13,9 +13,11 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:
+      - run: ls ${{ github.workspace }}
       - run: yarn test:all
   build:
     needs: setup
     runs-on: ubuntu-latest
     steps:
+      - run: ls ${{ github.workspace }}
       - run: yarn build
