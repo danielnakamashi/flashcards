@@ -13,17 +13,15 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
+      - run: pwd
+      - run: ls
       - run: cd flashcards
       - run: yarn test:all
   build:
     needs: setup
     runs-on: ubuntu-latest
     steps:
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
+      - run: ls
+      - run: pwd
       - run: cd flashcards
       - run: yarn build
