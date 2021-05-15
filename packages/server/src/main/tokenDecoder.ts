@@ -1,5 +1,5 @@
 import admin from 'firebase-admin'
-import serviceAccount from './service-account.json'
+import serviceAccount from './service-account'
 
 function tokenDecoder(token: string) {
   if (admin.apps.length === 0) {
