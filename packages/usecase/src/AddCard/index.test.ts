@@ -3,7 +3,7 @@ import { CardData } from '../protocols'
 import { createAddCard } from './createAddCard'
 
 describe('Use case - AddCard', () => {
-  it('should create add card use case', async () => {
+  it('should create a new card based on service return', async () => {
     const cardAdded = new CardData({ id: '1', front: 'front', back: 'back' })
     const service: AddCardService = {
       addCard: jest.fn(() => Promise.resolve(cardAdded)),
