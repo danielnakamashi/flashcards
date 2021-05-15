@@ -10,6 +10,7 @@ jobs:
           node-version: '12'
       - run: curl --compressed -o- -L - https://yarnpkg.com/install.sh | bash
       - run: yarn install --frozen-lockfile
+      - run: ls
   test:
     needs: setup
     runs-on: ubuntu-latest
