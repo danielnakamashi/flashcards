@@ -1,0 +1,21 @@
+name: Pull Request Checks
+on: [pull_request]
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12'
+      - run: yarn install --frozen-lockfile
+  test:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+      - run: yarn test:all
+  build:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+      - run: yarn build
