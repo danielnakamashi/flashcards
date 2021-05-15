@@ -32,8 +32,9 @@
   },
   "scripts": {
     "test": "jest",
+    "test:all": "yarn lint && yarn test",
     "dev": "cd docker && docker compose up ",
-    "build": "yarn --cwd packages/presentation workspace @flashcards/presentation build",
+    "build": "yarn --cwd packages/presentation workspace @flashcards/presentation build && yarn workspace @flashcards/server build",
     "lint": "yarn lint:es && yarn lint:ts",
     "lint:es": "eslint . --ext .ts,.tsx",
     "lint:ts": "lerna run lint:ts"
