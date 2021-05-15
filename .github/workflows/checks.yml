@@ -11,17 +11,26 @@ jobs:
       - run: curl --compressed -o- -L - https://yarnpkg.com/install.sh | bash
       - run: yarn install --frozen-lockfile
       - run: ls
+      - name: Upload files to artifact
+        uses: actions/upload-artifact@v2
+        with:
+          path: .
+          retention-days: 1
   test:
     needs: setup
     runs-on: ubuntu-latest
     steps:
-      - run: pwd
+      - name: Download files from setup
+        with:
+          path: .
       - run: ls
       - run: yarn test:all
   build:
     needs: setup
     runs-on: ubuntu-latest
     steps:
+      - name: Download files from setup
+        with:
+          path: .
       - run: ls
-      - run: pwd
       - run: yarn build
