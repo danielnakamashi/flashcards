@@ -5,7 +5,7 @@ interface AddTopicInput {
 }
 
 interface AddTopicUseCase {
-  (token: string, data: AddTopicInput): Promise<Topic>
+  (token: string, data: AddTopicInput): Promise<Topic | null>
 }
 
 export type { AddTopicUseCase, AddTopicInput }
