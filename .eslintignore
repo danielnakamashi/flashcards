@@ -1,3 +1,7 @@
 dist
 next.config.js
 jest.config.js
+.github
+.vscode
+docker
+node_modules
