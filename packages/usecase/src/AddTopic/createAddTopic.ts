@@ -3,11 +3,11 @@ import { AddTopicService } from './AddTopicService'
 import { AddTopicInput, AddTopicUseCase } from './AddTopicUseCase'
 
 function createAddTopic(service: AddTopicService): AddTopicUseCase {
-  return async function (token: string, data: AddTopicInput): Promise<Topic> {
+  return async function (token: string, data: AddTopicInput): Promise<Topic | null> {
     const topicData = await service.addTopic(token, data)
 
-    if (topicData === null || topicData === undefined) {
-      throw new Error('Error on service `addTopic`')
+    if (topicData === null) {
+      return null
     }
 
     return new Topic({
