@@ -3,9 +3,9 @@ import * as useCases from '../usecase'
 import serviceAccount from './service-account'
 
 const service = new FirebaseService(
-  serviceAccount.client_email,
-  serviceAccount.private_key,
-  serviceAccount.project_id,
+  serviceAccount.clientEmail,
+  serviceAccount.privateKey,
+  serviceAccount.projectId,
 )
 
 const addCard = useCases.createAddCard(service)
